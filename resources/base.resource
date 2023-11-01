@@ -4,6 +4,7 @@ Documentation       arquivo base do projeto
 Library             Browser
 Library             OperatingSystem
 Resource            actions/signup.resource
+Resource            actions/home.resource
 Resource            env.resource
 
 

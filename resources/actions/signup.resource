@@ -5,10 +5,6 @@ Resource            ../base.resource
 
 
 *** Keywords ***
-Go To Signup Page
-    Click    css=a[href="/signup"]
-    Wait For Elements State    css=form h1 >> text=Faça seu cadastro    visible    5
-
 Fill signup form
     [Arguments]    ${dog_walker}
 

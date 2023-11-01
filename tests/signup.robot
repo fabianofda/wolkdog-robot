@@ -22,7 +22,7 @@ Deve poder cadastrar um novo dog walker
     ...    complemento=casa 1
     ...    documento=doc.jpg
 
-    Go To Signup Page
+    Go to signup page
     Fill Signup Form    ${dog_walker}
     Submit Signup Form
     Pop-up With Succes Message    Recebemos o seu cadastro e em breve retornaremos o contato.
@@ -41,7 +41,7 @@ Nao deve cadastrar se o cpf for invalido
     ...    complemento=casa 12
     ...    documento=cpf-inv.png
 
-    Go To Signup Page
+    Go to signup page
     Fill Signup Form    ${dog_walker_cpf_inv}
     Submit Signup Form
     Warning message    CPF inválido
@@ -60,13 +60,13 @@ Nao deve cadastrar se o CEP for invalido
     ...    complemento=${EMPTY}
     ...    documento=cpf-inv.png
 
-    Go To Signup Page
+    Go to signup page
     Fill Signup Form    ${dog_walker_CEP_inv}
     Warning message    Informe um CEP válido
 
 Nao deve cadastrar se os campos obrigatorios nao forem preenchidos
     [Tags]    required
-    Go To Signup Page
+    Go to signup page
     Submit Signup Form
     Warning message    Informe o seu nome completo
     Warning message    Informe o seu melhor email
@@ -89,7 +89,7 @@ Deve poder cadastrar um dog walker que saiba cuidar de pets
     ...    complemento=casa 123
     ...    documento=doc.jpg
 
-    Go To Signup Page
+    Go to signup page
     Fill Signup Form    ${dog_walker}
     Additional service    Cuidar
     Submit Signup Form
@@ -109,7 +109,7 @@ Deve poder cadastrar um dog walker que saiba adestrar pets
     ...    complemento=casa 1234
     ...    documento=doc.jpg
 
-    Go To Signup Page
+    Go to signup page
     Fill Signup Form    ${dog_walker}
     Additional service    Adestrar
     Submit Signup Form
