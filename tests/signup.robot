@@ -114,3 +114,9 @@ Deve poder cadastrar um dog walker que saiba adestrar pets
     Additional service    Adestrar
     Submit Signup Form
     Pop-up With Succes Message    Recebemos o seu cadastro e em breve retornaremos o contato.
+
+Deve validar buscar por CEP sem preenchimento
+    Go to signup page
+    Search by zip code
+    Warning message    Informe um CEP válido
+    

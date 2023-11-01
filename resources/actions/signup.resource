@@ -13,7 +13,7 @@ Fill signup form
     Fill Text    css=input[name=cpf]    ${dog_walker}[cpf]
     Fill Text    css=input[name=cep]    ${dog_walker}[cep]
 
-    Click    css=input[value$="CEP"]
+    Search by zip code
 
     Get Property    css=input[name="addressStreet"]    value    equal    ${dog_walker}[rua]
     Get Property    css=input[name="addressDistrict"]    value    equal    ${dog_walker}[bairro]
@@ -23,6 +23,9 @@ Fill signup form
     Fill Text    css=input[name=addressDetails]    ${dog_walker}[complemento]
 
     Upload File By Selector    css=input[type=file]    ${EXECDIR}/resources/fixtures/${dog_walker}[documento]
+
+Search by zip code
+    Click    css=input[value$="CEP"]
 
 Additional service
     [Arguments]    ${atividade_extra}
